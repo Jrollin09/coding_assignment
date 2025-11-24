@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Water Tank Problem</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        #container {
+            border: 1px solid #aaa;
+            display: inline-block;
+            padding: 6px;
+            background: #f9fafb;
+        }
+
+        svg {
+            background: #f2f2f2;
+        }
+
+        .block {
+            fill: gray;
+        }
+
+        .water {
+            fill: skyblue;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Water Tank Visualization</h2>
+
+    <input id="inputArr" type="text" value="0,4,0,0,0,6,0,6,4,0" style="width:300px;">
+    <button id="renderBtn">Render</button>
+
+    <h3 id="result"></h3>
+
+    <div id="container"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('renderBtn').addEventListener('click', render);
+        document.getElementById('inputArr').addEventListener('keydown', e => { if (e.key === 'Enter') render(); });
+        render();
+    </script>
+</body>
+
+</html>
