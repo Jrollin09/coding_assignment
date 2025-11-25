@@ -25,7 +25,7 @@ The script calculates the optimal mix of building types (Theatre, Pub, Commercia
 **Building Types:**
 - **Theatre (T):** Takes 5 units of time, earns $1500/unit.
 - **Pub (P):** Takes 4 units of time, earns $1000/unit.
-- **Commercial Park (C):** Takes 10 units of time, earns $3000/unit.
+- **Commercial Park (C):** Takes 10 units of time, earns $2000/unit.
 
 ### How to Run
 1. Ensure you have Python installed.
